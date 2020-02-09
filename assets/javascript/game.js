@@ -35,14 +35,15 @@ instructionText.textContent = "Push any letter to start game."
 randomLetter = stringGen(1);
 console.log(randomLetter);
 
+//Start of the game
 document.onkeypress = function (event) {
-
+  //Deleting structions and notifying player when new game begins
+  instructionText.textContent = ""
+  
   //Creating variables for use on keypress event
   var userGuess = event.key;
   var userGuessKey1 = event.keyCode;
   var userGuessKey2 = event.which;
-  instructionText.textContent = ""
-  var test
 
   //Determine if user pressed lowercase letter
   if ((userGuessKey1 >= 97 || userGuessKey2 >= 97) && (userGuessKey1 <=122 || userGuessKey2 <= 122)){
