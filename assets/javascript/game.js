@@ -37,7 +37,7 @@ console.log(randomLetter);
 
 //Start of the game
 document.onkeypress = function (event) {
-  //Deleting structions and notifying player when new game begins
+  //Deleting instructions and notifying player when new game begins
   instructionText.textContent = ""
   
   //Creating variables for use on keypress event
